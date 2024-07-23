@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favico -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./img/blue-lock-favico.png"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptator</title>
+  </head>
+  <body>
+    <header>
+      <div class="container__header">
+        <div class="header">
+          <img class="logo" src="./img/alura.svg" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="container">
+        <section class="left" id="left">
+          <textarea
+            class="inputTextArea"
+            id="textoInput"
+            placeholder="Digite seu texto"
+            autofocus
+          ></textarea>
+          <div class="buttons-content">
+            <span class="info">
+              <img src="./img/!.svg" alt="warning" />
+              Apenas letras minúsculas e sem acento.
+            </span>
+            <div class="buttons">
+              <button id="button__criptografar" class="button__criptografar">
+                Criptografar
+              </button>
+              <button
+                id="button__descriptografar"
+                class="button__descriptografar"
+              >
+                Descriptografar
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="right" id="right">
+          <img
+            id="blue-guy"
+            class="blue-guy"
+            src="./img/blue-guy.svg"
+            alt="Nenhuma mensagem encontrada, favor digitar a mensagem."
+          />
+          <textarea
+            id="textoFinal"
+            class="textoFinal"
+            placeholder="Nenhuma mensagem encontrada."
+          ></textarea>
+          <p id="textoInfo" class="info">
+            Digite um texto que deseja criptografar ou descriptografar.
+          </p>
+          <button class="button__copiar button__ocultar" id="button__copiar">
+            Copiar
+          </button>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/rafael-limma/"
+          ><img class="links" src="./img/linkedin.svg" alt="Linkedin"
+        /></a>
+        <a href="https://github.com/rsantiago-lima"
+          ><img class="links" src="./img/github.svg" alt="github"
+        /></a>
+      </div>
+      <h3 class="creator">Desenvolvido por Rafael Lima</h3>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
